@@ -1,0 +1,68 @@
+import { Achievement } from '../types';
+
+export const INITIAL_ACHIEVEMENTS: Achievement[] = [
+  {
+    id: 'ach-first-task',
+    code: 'first_task',
+    title: 'First Step',
+    description: 'Mark your very first study task as completed.',
+    iconName: 'Zap',
+    tasksThreshold: 1,
+  },
+  {
+    id: 'ach-century-club',
+    code: 'century_club',
+    title: 'Century Club',
+    description: 'Earn your first 100 points from completed tasks.',
+    iconName: 'Award',
+    pointsThreshold: 100,
+  },
+  {
+    id: 'ach-streak-3',
+    code: 'streak_3',
+    title: 'Consistency Spark',
+    description: 'Maintain a 3-day consecutive study streak.',
+    iconName: 'Flame',
+    streakThreshold: 3,
+  },
+  {
+    id: 'ach-streak-7',
+    code: 'streak_7',
+    title: 'Seven-Day Warrior',
+    description: 'Complete at least one task every day for 7 consecutive days.',
+    iconName: 'ShieldAlert',
+    streakThreshold: 7,
+  },
+  {
+    id: 'ach-tasks-25',
+    code: 'tasks_25',
+    title: 'Dedicated Scholar',
+    description: 'Successfully complete 25 study topics.',
+    iconName: 'BookOpen',
+    tasksThreshold: 25,
+  },
+  {
+    id: 'ach-tasks-50',
+    code: 'tasks_50',
+    title: 'Half Century',
+    description: 'Conquer 50 study topics with the squad.',
+    iconName: 'Trophy',
+    tasksThreshold: 50,
+  },
+  {
+    id: 'ach-points-500',
+    code: 'points_500',
+    title: 'High Achiever',
+    description: 'Amass 500 cumulative study points.',
+    iconName: 'Crown',
+    pointsThreshold: 500,
+  },
+  {
+    id: 'ach-perfect-day',
+    code: 'perfect_day',
+    title: 'Flawless Execution',
+    description: 'Complete 100% of the day’s assigned topics.',
+    iconName: 'Sparkles',
+    specialCondition: 'all_day_tasks_completed',
+  },
+];
